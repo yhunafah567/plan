@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planberry</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#e63e79" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Planberry</h1>
+
+  <form id="Task-form">
+    <input type="text" id="Task-input" class="form-control mb-3" placeholder="What needs to be done?" />
+    <textarea id="Task-description" class="form-control mb-3" placeholder="Description (optional)"></textarea>
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
+
+  <div class="btn-group mt-3" id="Filter-buttons">
+    <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+    <button type="button" class="btn btn-outline-primary" data-filter="pending">Pending</button>
+    <button type="button" class="btn btn-outline-primary" data-filter="completed">Completed</button>
+  </div>
+
+  <ul id="Task-list" class="list-group mt-3"></ul>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

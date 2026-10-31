@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff4f8;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #c2185b;
+  font-weight: 700;
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+/* Pink version of Bootstrap's blue buttons */
+.btn-primary {
+  --bs-btn-bg: #e63e79;
+  --bs-btn-border-color: #e63e79;
+  --bs-btn-hover-bg: #cc3469;
+  --bs-btn-hover-border-color: #cc3469;
+  --bs-btn-active-bg: #b32c5b;
+  --bs-btn-active-border-color: #b32c5b;
+  --bs-btn-disabled-bg: #e63e79;
+  --bs-btn-disabled-border-color: #e63e79;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #e63e79;
+  --bs-btn-border-color: #e63e79;
+  --bs-btn-hover-bg: #e63e79;
+  --bs-btn-hover-border-color: #e63e79;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: #e63e79;
+  --bs-btn-active-border-color: #e63e79;
+  --bs-btn-active-color: #fff;
+}
+
+.form-check-input:checked {
+  background-color: #e63e79;
+  border-color: #e63e79;
+}
+
+.form-control:focus {
+  border-color: #e63e79;
+  box-shadow: 0 0 0 0.25rem rgba(230, 62, 121, 0.25);
+}
